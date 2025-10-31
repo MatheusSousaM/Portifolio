@@ -1,0 +1,126 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #ffffff;
+    --background1: #f5f5f5;
+    --background2: #dbdbdb;
+    --background4: #e0e0e0;
+    --background5: #d8d8d8;
+    --fontColor: #141414;
+    --fontColor1: #525252;
+    --fontColor2: #ffffff;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0f0f0f;
+    --background1: #0a0a0a;
+    --background2: #242424;
+    --background4: #ffffff42;
+    --background5: #151515;
+    --fontColor: #ebebeb;
+    --fontColor1: #adadad;
+    --fontColor2: #000000;
+  }
+}
+
+body {
+  font-family: "Fira Sans", Arial, sans-serif;
+  margin: 0;
+  background-color: var(--background);
+  color: var(--fontColor);
+  height: 100vh;
+}
+body,
+html {
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+#root {
+  height: 100%;
+}
+
+.App {
+  height: 100%;
+}
+
+#canvas {
+  border: 3px dashed var(--fontColor);
+  width: 400px;
+  height: 400px;
+  image-rendering: pixelated;
+  background-color: var(--background2);
+  border-radius: 8px;
+  padding: 4px;
+  margin-bottom: 15px;
+}
+
+body {
+  overflow: hidden;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--fontColor);
+  margin-bottom: 2rem;
+}
+
+.score__container {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2rem;
+  padding-bottom: 20px;
+  font-weight: 900;
+  color: limegreen;
+}
+
+span {
+  text-shadow: 
+        0 0 5px #00ff2210,  /* Pequena sombra clara */
+        0 0 10px #00ff2210, /* Brilho maior */
+        0 0 20px #00ff22, /* Brilho rosa */
+        0 0 60px #00ff22; /* Expansão final do brilho */
+}
+
+.seta {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  margin-top: 5;
+}
+
+strong {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 3px;
+  padding-left: 6px;
+  margin-top: 6px;
+}
